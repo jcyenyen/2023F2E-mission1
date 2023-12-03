@@ -2,15 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Noto Sans TC";
+  font-weight: 500;
+  src: url("../assets/fonts/Noto_Sans_TC/NotoSansTC-Medium.otf");
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  src: url("../assets/fonts/Noto_Sans_TC/NotoSansTC-Bold.otf");
+}
 
 
-/* #app {
-  max-width: 1280px;
+@layer components {
+  .containers {
+    @apply p-3 lg:px-6
+  }
+  .body16 {
+    @apply text-[16px] font-[500] leading-[1.75rem]
+  }
+  .subTitle20 {
+    @apply text-[20px] font-[500] leading-[1.5rem]
+  }
+  .title24 {
+    @apply text-[24px] font-[700] leading-[1.5rem]
+  }
+  .title28 {
+    @apply text-[28px] font-[700] leading-[1.5rem]
+  }
+  .display48 {
+    @apply text-[48px] font-[700] leading-[1.5rem]
+  }
+}
+
+#app {
+  max-width: 1536px;
   margin: 0 auto;
-  padding: 2rem;
-
   font-weight: normal;
-} */
+  font-family: "Noto Sans TC","Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
 
 @media (min-width: 1024px) {
   /* body {
