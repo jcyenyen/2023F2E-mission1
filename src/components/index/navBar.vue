@@ -10,7 +10,7 @@
             <img src="@/assets/images/navBar/HandCoins.svg" alt="小額捐款">
           </template>
           <template #content>
-            小額捐款
+            <span class="ms-2">小額捐款</span>
           </template> 
         </ButtonSm>
         <ul class="flex">
@@ -27,7 +27,7 @@
       <img src="@/assets/images/navBar/List.svg" alt="漢堡" class="lg:hidden" @click="isShowSidebar=!isShowSidebar"/>
     </div>
     <!-- mobile -->
-    <div v-if="isShowSidebar" class="w-[100%] h-[100vh] fixed backdrop-blur-[4px] top-[0px] left-[0px]" @click.self="isShowSidebar=!isShowSidebar">
+    <div v-if="isShowSidebar" class="w-[100%] h-[100vh] fixed backdrop-blur-[4px] top-[0px] left-[0px] z-10" @click.self="isShowSidebar=!isShowSidebar">
       <div class="relative w-[60%] h-[100vh] left-[40%] bg-white px-3 py-4">
         <router-link to="/">
           <img
@@ -41,7 +41,7 @@
             <img src="@/assets/images/navBar/HandCoins.svg" alt="小額捐款">
           </template>
           <template #content>
-            小額捐款
+            <span class="ms-2">小額捐款</span>
           </template> 
         </ButtonSm>
         <ul class="flex flex-col justify-start border-b">
@@ -62,7 +62,7 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
-import ButtonSm from '@/components/buttons/buttonSm.vue'
+import ButtonSm from '@/components/buttonSm.vue'
 
 const navList = [
   { name: '候選主張', id: 'candidate' },

@@ -20,19 +20,19 @@
     @apply p-3 lg:px-6
   }
   .body16 {
-    @apply text-[16px] font-[500] leading-[1.75rem]
+    @apply text-[16px] font-[500] leading-[1.75em]
   }
   .subTitle20 {
-    @apply text-[20px] font-[500] leading-[1.5rem]
+    @apply text-[20px] font-[500] leading-[1.5em]
   }
   .title24 {
-    @apply text-[24px] font-[700] leading-[1.5rem]
+    @apply text-[24px] font-[700] leading-[1.5em]
   }
   .title28 {
-    @apply text-[28px] font-[700] leading-[1.5rem]
+    @apply text-[28px] font-[700] leading-[1.5em]
   }
   .display48 {
-    @apply text-[48px] font-[700] leading-[1.5rem]
+    @apply text-[48px] font-[700] leading-[1.5em]
   }
 }
 
