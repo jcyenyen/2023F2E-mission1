@@ -1,5 +1,5 @@
 <template>
-  <section class="containers my-4">
+  <section class="containers mb-4">
     <sectionTitle title="候選主張" subTitle="Candidate Claims" />
     <p class="body16 mt-3">
       我黑新星堅信，藉由推動更完善的貓咪福利和相關政策，更是間接地投資於台灣的未來。畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的

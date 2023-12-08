@@ -1,5 +1,5 @@
 <template>
-  <div class="containers">
+  <div class="containers mb-4">
     <header id="header">
       <div class="relative w-[100%] max-w-[343px] mx-auto">
         <img src="@/assets/images/header/Black-01.svg" alt="黑貓" />

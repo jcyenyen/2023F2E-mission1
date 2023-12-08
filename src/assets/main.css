@@ -34,6 +34,7 @@
   .display48 {
     @apply text-[48px] font-[700] leading-[1.5em]
   }
+  
 }
 
 #app {

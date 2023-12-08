@@ -1,5 +1,5 @@
 <template>
-  <section class="containers my-4">
+  <section id="latest-events" class="containers mb-4">
     <SectionTitle title="最新活動" subTitle="Latest Events" />
     <ul>
       <li v-for="event in latestEvents" :key="event.title">
