@@ -1,13 +1,13 @@
 <template>
-    <section class="containers mb-4">
-      <div>
+    <section class="containers mb-4 lg:flex lg:justify-between">
+      <div class="lg:w-[40%]">
         <SectionTitle title="服務信箱" subTitle="Service Mail" />
-        <h3 class="title28 my-3">您的聲音，我們的行動！</h3>
+        <h3 class="title28 my-3 lg:mt-4">您的聲音，我們的行動！</h3>
         <p class="body16 text-gray-400">
             親愛的鄉親，每一位市民的意見都是我們社區前進的原動力。無論大小事，我都誠摯希望聽到您的建議。分享您的想法，一同為我們的未來打造更美好！
         </p>
       </div>
-      <div class="mt-4">
+      <div class="max-lg:mt-4 lg:w-[57%] relative">
         <form class="py-4 px-3 bg-primary-100 rounded-[16px] w-[100%]">
             <label for="name">
                 <div class="body16 mb-2">姓名</div>
@@ -27,6 +27,7 @@
             </label>
             <button class="px-4 py-3 rounded-[16px] bg-primary-300 w-[100%]">確認送出</button>
         </form>
+        <img src="@/assets/images/serviceMail/Black-02.svg" alt="" class="max-lg:hidden w-[297px] absolute top-[48%] left-[-35%] z-[-1]">
       </div>
     </section>
   </template>

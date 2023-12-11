@@ -1,12 +1,12 @@
 <template>
-  <section id="latest-events" class="containers mb-4">
+  <section id="latest-events" class="containers mb-4 lg:flex lg:justify-between">
     <SectionTitle title="最新活動" subTitle="Latest Events" />
-    <ul>
-      <li v-for="event in latestEvents" :key="event.title">
-        <div class="my-3">
-          <img :src="`/src/assets/images/events/${event.img}.svg`" :alt="`${event.title}`" class="rounded-[16px] w-[100%] "/>
+    <ul class="lg:w-[75%]">
+      <li v-for="event in latestEvents" :key="event.title" class="lg:flex lg:mb-4">
+        <div class="max-lg:my-3 w-[100%] lg:w-[264px] lg:me-3">
+          <img :src="`/src/assets/images/events/${event.img}.svg`" :alt="`${event.title}`" class="block rounded-[16px] w-[100%]"/>
         </div>
-        <div>
+        <div class="lg:w-[68%]">
           <h3 class="title28 text-primary-500">
             {{ event.title }}
           </h3>
