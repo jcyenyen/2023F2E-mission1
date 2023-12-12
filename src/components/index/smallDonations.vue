@@ -1,5 +1,5 @@
 <template>
-  <section id="small-donations" class="containers mb-4 lg:flex lg:justify-between">
+  <section id="smallDonations" class="containers mb-4 lg:flex lg:justify-between">
     <div class="lg:w-[40%] lg:flex lg:flex-col lg:justify-between">
       <div>
         <SectionTitle title="小額捐款" subTitle="Small Donations" />

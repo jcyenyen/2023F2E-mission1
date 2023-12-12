@@ -1,5 +1,5 @@
 <template>
-  <section class="containers mb-4 lg:flex lg:justify-between">
+  <section id="candidate" class="containers mb-4 lg:flex lg:justify-between">
     <sectionTitle title="候選主張" subTitle="Candidate Claims" />
     <article class="body16 max-lg:mt-3 lg:w-[75%]">
       <p >

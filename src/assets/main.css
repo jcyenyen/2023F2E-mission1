@@ -17,7 +17,7 @@
 
 @layer components {
   .containers {
-    @apply p-3 lg:px-6
+    @apply w-[100%] p-3 lg:px-6
   }
   .body16 {
     @apply text-[16px] font-[500] leading-[1.75em]

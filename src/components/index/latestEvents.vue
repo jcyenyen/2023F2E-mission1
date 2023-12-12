@@ -1,5 +1,5 @@
 <template>
-  <section id="latest-events" class="containers mb-4 lg:flex lg:justify-between">
+  <section id="latestEvents" class="containers mb-4 lg:flex lg:justify-between">
     <SectionTitle title="最新活動" subTitle="Latest Events" />
     <ul class="lg:w-[75%]">
       <li v-for="event in latestEvents" :key="event.title" class="lg:flex lg:mb-4">

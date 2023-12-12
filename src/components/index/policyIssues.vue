@@ -1,5 +1,5 @@
 <template>
-  <section id="policy-issues" class="containers mb-4">
+  <section id="policyIssue" class="containers mb-4">
     <SectionTitle title="政策議題" subTitle="Policy Issues" />
     <div class="flex mt-4">
       <div

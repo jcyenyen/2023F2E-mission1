@@ -1,5 +1,5 @@
 <template>
-    <section class="containers mb-4 lg:flex lg:justify-between">
+    <section id="serviceMailbox" class="containers mb-4 lg:flex lg:justify-between">
       <div class="lg:w-[40%]">
         <SectionTitle title="服務信箱" subTitle="Service Mail" />
         <h3 class="title28 my-3 lg:mt-4">您的聲音，我們的行動！</h3>

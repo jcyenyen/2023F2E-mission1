@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:containers mb-4">
+  <div class=" pt-[80px] lg:containers mb-4 lg:pt-[80px]">
     <header id="header" class="relative">
       <div class="relative z-[2] bottom-[-22px] w-[90%] lg:w-[33%] max-w-[360px] lg:max-w-[450px] mx-auto lg:absolute lg:left-[70%] lg:bottom-[-15px]">
         <img src="@/assets/images/header/Black-01.svg" alt="黑貓" class="w-[100%]" />
