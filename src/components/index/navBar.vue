@@ -5,25 +5,22 @@
         <img src="@/assets/images/navBar/logo-black.svg" alt="黑新星" class="w-[186px] h-[48px]" />
       </router-link>
       <div class="flex items-center max-lg:hidden">
-        <a href="#smallDonations">
-          <ButtonSm class="me-3">
-            <template #frontImg>
-              <img src="@/assets/images/navBar/HandCoins.svg" alt="小額捐款" />
-            </template>
-            <template #content>
-              <span class="ms-2">小額捐款</span>
-            </template>
-          </ButtonSm>
-        </a>
+        <ButtonSm class="me-3" @click="scrollById('smallDonations')">
+          <template #frontImg>
+            <img src="@/assets/images/navBar/HandCoins.svg" alt="小額捐款" />
+          </template>
+          <template #content>
+            <span class="ms-2">小額捐款</span>
+          </template>
+        </ButtonSm>
         <ul class="flex">
           <li
             v-for="list in navList"
             :key="list.id"
             class="body16 nav_list hover:text-primary-500 cursor-pointer"
+            @click="scrollById(list.id)"
           >
-            <a :href="`#${list.id}`">
-              {{ list.name }}
-            </a>
+            {{ list.name }}
           </li>
         </ul>
       </div>
@@ -57,26 +54,26 @@
             class="w-[186px] h-[48px] mb-4 mx-auto"
           />
         </router-link>
-        <a href="#smallDonations">
-          <ButtonSm class="mb-3">
-            <template #frontImg>
-              <img src="@/assets/images/navBar/HandCoins.svg" alt="小額捐款" />
-            </template>
-            <template #content>
-              <span class="ms-2">小額捐款</span>
-            </template>
-          </ButtonSm>
-        </a>
+
+        <ButtonSm class="mb-3" @click="(isShowSidebar = !isShowSidebar), scrollById('smallDonations') ">
+          <template #frontImg>
+            <img src="@/assets/images/navBar/HandCoins.svg" alt="小額捐款" />
+          </template>
+          <template #content>
+            <span class="ms-2">小額捐款</span>
+          </template>
+        </ButtonSm>
 
         <ul class="flex flex-col justify-start border-b">
           <li
             v-for="list in navList"
             :key="list.id"
             class="body16 mb-3 w-[64px] hover:text-primary-500 cursor-pointer"
+            @click="(isShowSidebar = !isShowSidebar), scrollById(list.id)"
           >
-          <a :href="`#${list.id}`" @click="isShowSidebar = !isShowSidebar">
-            {{ list.name }}
-          </a>
+            <a>
+              {{ list.name }}
+            </a>
           </li>
         </ul>
         <ul class="flex flex-col justify-start">
@@ -101,6 +98,7 @@
 import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 import ButtonSm from '@/components/buttonSm.vue'
+import scrollById from '@/utils/scrollById.js'
 
 const navList = [
   { name: '候選主張', id: 'candidate' },
