@@ -1,38 +1,44 @@
 <template>
   <section id="policyIssue" class="containers mb-4">
     <SectionTitle title="政策議題" subTitle="Policy Issues" />
-    <div class="flex mt-4">
-      <div
-        v-for="tab in tabList"
-        :key="tab.id"
-        class=" subTitle20 p-3 rounded-t-[16px] text-center w-[100%] cursor-pointer"
-        :class="{ 'bg-primary-100': activeTab === tab.id,'bg-primary-400': activeTab !== tab.id,'hover:bg-primary-300': activeTab !== tab.id }"
-        @click="activeTab = tab.id"
-      >
-        {{ tab.tabName }}
-      </div>
-    </div>
-    <div class="bg-primary-100 px-3 py-4 text-center">
-      <h3 class="title28 text-primary-500 mb-5">
-        {{ activeContent.title }}
-      </h3>
-      <div class="lg:flex lg:justify-between">
+    <div data-aos="zoom-in-right">
+      <div class="flex mt-4">
         <div
-          v-for="contentList in activeContent.contentList"
-          :key="contentList.title"
-          class="flex flex-col items-center mb-4 content_box lg:w-[33%] lg:px-4"
+          v-for="tab in tabList"
+          :key="tab.id"
+          class="subTitle20 p-3 rounded-t-[16px] text-center w-[100%] cursor-pointer"
+          :class="{
+            'bg-primary-100': activeTab === tab.id,
+            'bg-primary-400': activeTab !== tab.id,
+            'hover:bg-primary-300': activeTab !== tab.id
+          }"
+          @click="activeTab = tab.id"
         >
-          <img
-            :src="`/src/assets/images/policyIssues/${contentList.icon}`"
-            :alt="`{contentList.title}`"
-            class="w-[128px]"
-          />
-          <h4 class="title28">
-            {{ contentList.title }}
-          </h4>
-          <p class="body16">
-            {{ contentList.content }}
-          </p>
+          {{ tab.tabName }}
+        </div>
+      </div>
+      <div class="bg-primary-100 px-3 py-4 text-center">
+        <h3 class="title28 text-primary-500 mb-5">
+          {{ activeContent.title }}
+        </h3>
+        <div class="lg:flex lg:justify-between">
+          <div
+            v-for="contentList in activeContent.contentList"
+            :key="contentList.title"
+            class="flex flex-col items-center mb-4 content_box lg:w-[33%] lg:px-4"
+          >
+            <img
+              :src="`/src/assets/images/policyIssues/${contentList.icon}`"
+              :alt="`{contentList.title}`"
+              class="w-[128px]"
+            />
+            <h4 class="title28">
+              {{ contentList.title }}
+            </h4>
+            <p class="body16">
+              {{ contentList.content }}
+            </p>
+          </div>
         </div>
       </div>
     </div>

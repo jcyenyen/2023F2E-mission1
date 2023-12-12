@@ -2,7 +2,7 @@
   <section id="latestEvents" class="containers mb-4 lg:flex lg:justify-between">
     <SectionTitle title="最新活動" subTitle="Latest Events" />
     <ul class="lg:w-[75%]">
-      <li v-for="event in latestEvents" :key="event.title" class="lg:flex lg:mb-4">
+      <li v-for="event in latestEvents" :key="event.title" class="lg:flex lg:mb-4" data-aos="zoom-in-right">
         <div class="max-lg:my-3 w-[100%] lg:w-[264px] lg:me-3">
           <img :src="`/src/assets/images/events/${event.img}.svg`" :alt="`${event.title}`" class="block rounded-[16px] w-[100%]"/>
         </div>

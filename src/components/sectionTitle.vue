@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-primary-500 display48">
+  <h2 class="text-primary-500 display48" data-aos="fade-up">
     {{ props.title }}
     <span class="subTitle20 block mt-2"> {{ props.subTitle }} </span>
   </h2>

@@ -1,7 +1,7 @@
 <template>
   <section id="candidate" class="containers mb-4 lg:flex lg:justify-between">
     <sectionTitle title="候選主張" subTitle="Candidate Claims" />
-    <article class="body16 max-lg:mt-3 lg:w-[75%]">
+    <article class="body16 max-lg:mt-3 lg:w-[75%]" data-aos="zoom-in-up">
       <p >
         我黑新星堅信，藉由推動更完善的貓咪福利和相關政策，更是間接地投資於台灣的未來。畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的
         GDP 經濟帶來巨大效益。

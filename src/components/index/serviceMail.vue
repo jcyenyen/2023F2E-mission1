@@ -2,8 +2,8 @@
     <section id="serviceMailbox" class="containers mb-4 lg:flex lg:justify-between">
       <div class="lg:w-[40%]">
         <SectionTitle title="服務信箱" subTitle="Service Mail" />
-        <h3 class="title28 my-3 lg:mt-4">您的聲音，我們的行動！</h3>
-        <p class="body16 text-gray-400">
+        <h3 class="title28 my-3 lg:mt-4" data-aos="fade-right">您的聲音，我們的行動！</h3>
+        <p class="body16 text-gray-400" data-aos="fade-right">
             親愛的鄉親，每一位市民的意見都是我們社區前進的原動力。無論大小事，我都誠摯希望聽到您的建議。分享您的想法，一同為我們的未來打造更美好！
         </p>
       </div>
@@ -25,9 +25,9 @@
                 <div class="body16 mb-2">對我們的建議</div>
                 <textarea id="advice" v-model="formData.advice" type="text" class="w-[100%] rounded-[8px] border-2 border-gray-100 h-[112px] mb-5" />
             </label>
-            <button class="px-4 py-3 rounded-[16px] bg-primary-300 w-[100%]">確認送出</button>
+            <button class="px-4 py-3 rounded-[16px] bg-primary-300 w-[100%] hover:bg-primary-400">確認送出</button>
         </form>
-        <img src="@/assets/images/serviceMail/Black-02.svg" alt="" class="max-lg:hidden w-[40%] max-w-[297px] absolute bottom-[0%] left-[-30%] z-[-1]">
+        <img src="@/assets/images/serviceMail/Black-02.svg" alt="" class="max-lg:hidden w-[40%] max-w-[297px] absolute bottom-[0%] left-[-30%] z-[-1]" data-aos="fade-left">
       </div>
     </section>
   </template>

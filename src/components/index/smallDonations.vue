@@ -3,9 +3,9 @@
     <div class="lg:w-[40%] lg:flex lg:flex-col lg:justify-between">
       <div>
         <SectionTitle title="小額捐款" subTitle="Small Donations" />
-        <h3 class="title28 my-3 lg:mt-4">您的每筆捐款，<br />是每隻毛孩未來的大大動力！</h3>
+        <h3 class="title28 my-3 lg:mt-4" data-aos="fade-right">您的每筆捐款，<br />是每隻毛孩未來的大大動力！</h3>
       </div>
-      <div class="w-[100%] bg-gray-500 text-primary-300 p-3 rounded-[16px] mb-4 lg:mb-[0px]">
+      <div class="w-[100%] bg-gray-500 text-primary-300 p-3 rounded-[16px] mb-4 lg:mb-[0px]" data-aos="flip-up">
         <h4 class="subTitle20">目前贊助總金額</h4>
         <p class="display48">987,655,873</p>
       </div>
