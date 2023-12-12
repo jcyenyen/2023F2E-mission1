@@ -8,7 +8,7 @@
         </p>
       </div>
       <div class="max-lg:mt-4 lg:w-[57%] relative">
-        <form class="py-4 px-3 bg-primary-100 rounded-[16px] w-[100%]">
+        <form class="py-4 px-3 lg:p-4 bg-primary-100 rounded-[16px] w-[100%]">
             <label for="name">
                 <div class="body16 mb-2">姓名</div>
                 <input id="name" v-model="formData.name" type="text" class="w-[100%] rounded-[8px] border-2 border-gray-100 h-[56px] mb-3">
@@ -27,7 +27,7 @@
             </label>
             <button class="px-4 py-3 rounded-[16px] bg-primary-300 w-[100%]">確認送出</button>
         </form>
-        <img src="@/assets/images/serviceMail/Black-02.svg" alt="" class="max-lg:hidden w-[297px] absolute top-[48%] left-[-35%] z-[-1]">
+        <img src="@/assets/images/serviceMail/Black-02.svg" alt="" class="max-lg:hidden w-[40%] max-w-[297px] absolute bottom-[0%] left-[-30%] z-[-1]">
       </div>
     </section>
   </template>

@@ -14,14 +14,14 @@
           </template> 
         </ButtonSm>
         <ul class="flex">
-          <li v-for="list in navList" :key="list.id" class="body16 nav_list">
+          <li v-for="list in navList" :key="list.id" class="body16 nav_list hover:text-primary-500 cursor-pointer">
             {{ list.name }}
           </li>
         </ul>
       </div>
       <ul class="flex items-center max-lg:hidden">
-        <li v-for="list in socialMediaList" :key="list.name" class="nav_media">
-          <img :src="`/src/assets/images/navBar/${list.file}.svg`" :alt="`${list.name}`" />
+        <li v-for="list in socialMediaList" :key="list.name" class="nav_media ">
+          <img :src="`/src/assets/images/navBar/${list.file}.svg`" :alt="`${list.name}`" class="hover:opacity-50 cursor-pointer"/>
         </li>
       </ul>
       <img src="@/assets/images/navBar/List.svg" alt="漢堡" class="lg:hidden" @click="isShowSidebar=!isShowSidebar"/>
@@ -45,12 +45,12 @@
           </template> 
         </ButtonSm>
         <ul class="flex flex-col justify-start border-b">
-          <li v-for="list in navList" :key="list.id" class="body16 mb-3 w-[64px]">
+          <li v-for="list in navList" :key="list.id" class="body16 mb-3 w-[64px] hover:text-primary-500 cursor-pointer">
             {{ list.name }}
           </li>
         </ul>
         <ul class="flex flex-col justify-start">
-          <li v-for="list in socialMediaList" :key="list.name" class="flex items-center mt-3">
+          <li v-for="list in socialMediaList" :key="list.name" class="flex items-center mt-3 hover:opacity-50 cursor-pointer">
             <img :src="`/src/assets/images/navBar/${list.file}.svg`" :alt="`${list.name}`" class="me-1"/>
             <span>{{ list.name }}</span>
           </li>

@@ -5,8 +5,8 @@
       <div
         v-for="tab in tabList"
         :key="tab.id"
-        class=" subTitle20 p-3 rounded-t-[16px] text-center w-[100%]"
-        :class="{ 'bg-primary-100': activeTab === tab.id,'bg-primary-400': activeTab !== tab.id }"
+        class=" subTitle20 p-3 rounded-t-[16px] text-center w-[100%] cursor-pointer"
+        :class="{ 'bg-primary-100': activeTab === tab.id,'bg-primary-400': activeTab !== tab.id,'hover:bg-primary-300': activeTab !== tab.id }"
         @click="activeTab = tab.id"
       >
         {{ tab.tabName }}

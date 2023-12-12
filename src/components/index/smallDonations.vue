@@ -14,10 +14,10 @@
       <li
         v-for="donation in donationBoard"
         :key="donation.name"
-        class="rounded-[16px] border-[2px] border-primary-500 p-3 mt-3 lg:px-4 lg:flex lg:justify-between"
+        class="rounded-[16px] border-[2px] border-primary-500 p-3 mt-3 lg:px-4 lg:flex lg:justify-between hover:bg-gray-500 hover:text-primary-300 cursor-pointer"
       >
         <div class="flex flex-col justify-between">
-          <div class="flex text-gray-500 title28 mb-3 leading-[1.75rem]">
+          <div class="flex title28 mb-3 leading-[1.75rem]">
             <h4 class="border-e border-[black] me-3 pe-3">
               {{ donation.name }}
             </h4>
@@ -30,7 +30,7 @@
               </template>
             </p>
           </div>
-          <p class="bg-primary-200 px-3 py-2 body16 w-[161px] rounded-[8px]">
+          <p class="bg-primary-200 text-gray-500 px-3 py-2 body16 w-[161px] rounded-[8px]">
             已有{{ donation.donatePeople }}人贊助
           </p>
         </div>
