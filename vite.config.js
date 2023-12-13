@@ -13,5 +13,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  publicPath: '/2023F2E-mission1/',
+  base:'/2023F2E-mission1/'
 })
