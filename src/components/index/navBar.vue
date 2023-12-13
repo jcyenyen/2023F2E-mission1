@@ -27,7 +27,7 @@
       <ul class="flex items-center max-lg:hidden">
         <li v-for="list in socialMediaList" :key="list.name" class="nav_media">
           <img
-            :src="`/src/assets/images/navBar/${list.file}.svg`"
+            :src="getImageUrl('navBar',list.file)"
             :alt="`${list.name}`"
             class="hover:opacity-50 cursor-pointer"
           />
@@ -83,7 +83,7 @@
             class="flex items-center mt-3 hover:opacity-50 cursor-pointer"
           >
             <img
-              :src="`/src/assets/images/navBar/${list.file}.svg`"
+              :src="getImageUrl('navBar',list.file)"
               :alt="`${list.name}`"
               class="me-1"
             />
@@ -99,6 +99,7 @@ import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 import ButtonSm from '@/components/buttonSm.vue'
 import scrollById from '@/utils/scrollById.js'
+// import getImageUrl from '@/utils/getImageUrl.js'
 
 const navList = [
   { name: '候選主張', id: 'candidate' },
@@ -108,10 +109,14 @@ const navList = [
 ]
 
 const socialMediaList = [
-  { name: 'Facebook', file: 'FacebookLogo' },
-  { name: 'Instagram', file: 'InstagramLogo' },
-  { name: 'YouTube', file: 'YoutubeLogo' }
+  { name: 'Facebook', file: 'FacebookLogo.svg' },
+  { name: 'Instagram', file: 'InstagramLogo.svg' },
+  { name: 'YouTube', file: 'YoutubeLogo.svg' }
 ]
+
+const getImageUrl = (components,fileName) => {
+  return new URL(`../../assets/images/${components}/${fileName}`, import.meta.url).href;
+};
 
 const isShowSidebar = ref(false)
 </script>

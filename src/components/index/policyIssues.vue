@@ -28,7 +28,7 @@
             class="flex flex-col items-center mb-4 content_box lg:w-[33%] lg:px-4"
           >
             <img
-              :src="`/src/assets/images/policyIssues/${contentList.icon}`"
+              :src="getImageUrl('policyIssues',contentList.icon)"
               :alt="`{contentList.title}`"
               class="w-[128px]"
             />
@@ -128,6 +128,11 @@ const activeContent = computed(() => {
   const activeIndex = tabList.value.findIndex((v) => activeTab.value === v.id)
   return tabList.value[activeIndex]
 })
+
+const getImageUrl = (components,fileName) => {
+  return new URL(`../../assets/images/${components}/${fileName}`, import.meta.url).href;
+};
+
 </script>
 <style lagn="scss" scoped>
 .content_box {

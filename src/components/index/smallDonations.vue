@@ -34,14 +34,13 @@
             已有{{ donation.donatePeople }}人贊助
           </p>
         </div>
-        <img :src="`/src/assets/images/smallDonations/${donation.img}`" :alt="`${donation.name}`" class="w-[106px] max-lg:hidden">
+        <img :src="getImageUrl('smallDonations',donation.img)" :alt="`${donation.name}`" class="w-[106px] max-lg:hidden">
       </li>
     </ul>
   </section>
 </template>
 <script setup>
 import SectionTitle from '../sectiontitle.vue'
-import { ref, computed } from 'vue'
 
 const donationBoard = [
   {
@@ -69,5 +68,10 @@ const donationBoard = [
     img: 'ShootingStar.svg'
   }
 ]
+
+const getImageUrl = (components,fileName) => {
+  return new URL(`../../assets/images/${components}/${fileName}`, import.meta.url).href;
+};
+
 </script>
 <style lagn="scss" scoped></style>
