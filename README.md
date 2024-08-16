@@ -1,6 +1,25 @@
-# catCampaign
+# 2023 THE F2E 5th Mission1 - 立委競選官網(RWD一頁式網站)
 
-This template should help get you started developing with Vue 3 in Vite.
+本專案為 2023 第五屆 The F2E 之比賽項目：第一關 - 立委競選官網
+
+設計稿作者【PinpinChen】：https://2023.thef2e.com/users/12061579704054729654
+
+![image](https://github.com/user-attachments/assets/52e2edf5-c69d-4dfc-aa2b-bf67071ba7dc)
+
+[Demo](https://jcyenyen.github.io/2023F2E-mission1/)
+
+# 作品說明
+
+*使用技術：
+
+  Vue3，Tailwind，AOS
+
+
+*專案主旨：
+
+  做出具有RWD及動畫效果的一頁式網站
+
+# 執行流程
 
 ## Recommended IDE Setup
 
